@@ -15,10 +15,7 @@ app.use(cors());
 
  
 
-//port
 
-const port=process.env.PORT||5001;
-app.listen(port, () => console.log(`Server started at port : ${port}`));
 
 
 
@@ -26,3 +23,9 @@ app.listen(port, () => console.log(`Server started at port : ${port}`));
 //setup routes
 app.use('/api',login);
 app.use('/todo',todos);
+
+
+//port
+
+const port=process.env.PORT||5001;
+app.listen(port, () => console.log(`Server started at port : ${port}`));
